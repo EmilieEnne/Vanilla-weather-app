@@ -5,6 +5,7 @@ body {
 
 .search-bar {
   background: rgba(255, 255, 255, 0.5);
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
   max-width: 680px;
   height: 75px;
   border-radius: 60px;
@@ -71,6 +72,7 @@ body {
 
 .air-quali {
   background: rgba(255, 255, 255, 0.5);
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
   max-width: 680px;
   height: 220px;
   border-radius: 60px;
@@ -128,6 +130,7 @@ body {
 
 .prediction {
   background: linear-gradient(128.98deg, #b2e8ff 25.2%, #cfc5f7 93.14%);
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
   border-radius: 60px;
   max-width: 150px;
   height: 290px;
