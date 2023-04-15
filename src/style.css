@@ -129,7 +129,7 @@ body {
 }
 
 .prediction {
-  background: linear-gradient(128.98deg, #b2e8ff 25.2%, #cfc5f7 93.14%);
+  background: linear-gradient(170deg, #cfc5f7 7.18%, #b2e8ff 95.46%);
   box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
   border-radius: 60px;
   max-width: 150px;
@@ -181,3 +181,14 @@ body {
   height: 80px;
   margin-bottom: 30px;
 }
+
+/* prediction */
+
+position: absolute;
+width: 152px;
+height: 290px;
+left: 558px;
+top: 912px;
+
+background: linear-gradient(170deg, #cfc5f7 7.18%, #b2e8ff 95.46%);
+border-radius: 60px;
