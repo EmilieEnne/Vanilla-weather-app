@@ -1,6 +1,5 @@
 body {
   background: #e9efff;
-  font-family: "Climate Crisis", cursive;
   font-family: "Poppins", sans-serif;
 }
 
@@ -10,6 +9,10 @@ body {
   height: 75px;
   border-radius: 60px;
   margin: 50px auto;
+  padding-top: 18px;
+  padding-left: 50px;
+  font-size: 27px;
+  color: #959595;
 }
 
 .today-weater {
@@ -19,19 +22,92 @@ body {
   max-width: 680px;
   height: 400px;
   margin: 35px auto;
+  color: #fff;
 }
 
-.ari-quali {
+.today-weater img {
+  padding-left: 60px;
+  padding-top: 50px;
+  width: 312px;
+  height: 258px;
+}
+
+.today-weater h1 {
+  text-align: right;
+  font-weight: 200;
+  font-size: 180px;
+  color: #7834e8;
+  padding-right: 60px;
+  padding-top: 20px;
+}
+
+.today-weater h2 {
+  padding-top: 50px;
+  text-align: right;
+  padding-right: 60px;
+}
+
+.today-weater h3 {
+  padding-left: 60px;
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 27px;
+}
+
+.today-weater p {
+  font-size: 16px;
+  padding-left: 60px;
+}
+
+.today-weater small {
+  display: block;
+  text-align: right;
+  padding-right: 60px;
+}
+.today-weater a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.air-quali {
   background: rgba(255, 255, 255, 0.5);
   max-width: 680px;
   height: 220px;
   border-radius: 60px;
   margin: 70px auto;
+  color: #959595;
+  padding-left: 60px;
+}
+
+.air-quali h3 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.air-quali img {
+  height: 90px;
+  width: 160px;
+  margin-left: -30px;
+}
+
+.air-quali p {
+  display: inline;
+  text-align: center;
+  font-size: 27px;
 }
 
 .forcast {
   max-width: 680px;
   margin: 65px auto;
+  color: #959595;
+}
+
+.forcast h1 {
+  font-weight: 200;
+  font-size: 50;
+  color: #7834e8;
 }
 
 .this-day {
@@ -44,6 +120,12 @@ body {
   margin: auto;
 }
 
+.this-day img {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
 .prediction {
   background: linear-gradient(128.98deg, #b2e8ff 25.2%, #cfc5f7 93.14%);
   border-radius: 60px;
@@ -52,6 +134,17 @@ body {
   text-align: center;
   padding-top: 20px;
   margin: auto;
+  color: #fff;
+}
+
+.prediction h1 {
+  color: #fff;
+}
+
+.prediction img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
 .day-two {
@@ -64,6 +157,12 @@ body {
   margin: auto;
 }
 
+.day-two img {
+  width: 100px;
+  height: 60px;
+  margin-bottom: 50px;
+}
+
 .day-three {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 60px;
@@ -72,4 +171,10 @@ body {
   text-align: center;
   padding-top: 20px;
   margin: auto;
+}
+
+.day-three img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
 }
