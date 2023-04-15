@@ -4,78 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="search-bar"></div>
-      <div class="today-weater">
-        <div class="row">
-          <div class="col-6">
-            <img
-              class="main"
-              src="media/Partly cloudy.png"
-              alt="partly cloudy"
-            />
-            <h3>Partly cloudy</h3>
-            <p>Saturday, April 15th</p>
-          </div>
-          <div class="col-6">
-            <h2>Copenhagen</h2>
-            <p class="small">Fahrenheit</p>
-            <h1 class="temp">12°</h1>
-          </div>
-        </div>
-      </div>
-      <div class="ari-quali">
-        <h3>Air Quality</h3>
-        <div class="row">
-          <div class="col-6">
-            <img src="media/windArtboard 1.png" alt="wind icon" />
-            <p>7 m/s</p>
-          </div>
-          <div class="col-6">
-            <img src="media/humidityArtboard 1.png" alt="humidity icon" />
-            <p>42%</p>
+      <div class="weather-app-wrapper">
+        <div class="search-bar"></div>
+        <div class="today-weater">
+          <div class="row">
+            <div class="col-6">
+              <img
+                class="main"
+                src="media/Partly cloudy.png"
+                alt="partly cloudy"
+              />
+              <h3>Partly cloudy</h3>
+              <p>Saturday, April 15th</p>
+            </div>
+            <div class="col-6">
+              <h2>Copenhagen</h2>
+              <p class="small">Fahrenheit</p>
+              <h1 class="temp">12°</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="forcast">
-        <div class="row">
-          <div class="col-4">
-            <h3>Sat</h3>
-            <p class="date">April 15th</p>
-            <img
-              class="forcast"
-              src="media/Partly cloudy.png"
-              alt="partly cloudy"
-            />
-            <h1 class="forcast">12°</h1>
+        <div class="ari-quali">
+          <h3>Air Quality</h3>
+          <div class="row">
+            <div class="col-6">
+              <img src="media/windArtboard 1.png" alt="wind icon" />
+              <p>7 m/s</p>
+            </div>
+            <div class="col-6">
+              <img src="media/humidityArtboard 1.png" alt="humidity icon" />
+              <p>42%</p>
+            </div>
           </div>
-          <div class="col-4">
-            <h3>Sun</h3>
-            <p class="date">April 16th</p>
-            <img class="forcast" src="media/rain.png" alt="rain" />
-            <h1 class="forcast">10°</h1>
-          </div>
-          <div class="col-4">
-            <h3>Mon</h3>
-            <p class="date">April 17th</p>
-            <img class="forcast" src="media/cloudy.png" alt="cloudy" />
-            <h1 class="forcast">13°</h1>
-          </div>
-          <div class="col-4">
-            <h3>Tue</h3>
-            <p class="date">April 18th</p>
-            <img class="forcast" src="media/sun.png" alt="Sunny" />
-            <h1 class="forcast">16°</h1>
+        </div>
+        <div class="forcast">
+          <div class="row">
+            <div class="col-4">
+              <h3>Sat</h3>
+              <p class="date">April 15th</p>
+              <img
+                class="forcast"
+                src="media/Partly cloudy.png"
+                alt="partly cloudy"
+              />
+              <h1 class="forcast">12°</h1>
+            </div>
+            <div class="col-4">
+              <h3>Sun</h3>
+              <p class="date">April 16th</p>
+              <img class="forcast" src="media/rain.png" alt="rain" />
+              <h1 class="forcast">10°</h1>
+            </div>
+            <div class="col-4">
+              <h3>Mon</h3>
+              <p class="date">April 17th</p>
+              <img class="forcast" src="media/cloudy.png" alt="cloudy" />
+              <h1 class="forcast">13°</h1>
+            </div>
+            <div class="col-4">
+              <h3>Tue</h3>
+              <p class="date">April 18th</p>
+              <img class="forcast" src="media/sun.png" alt="Sunny" />
+              <h1 class="forcast">16°</h1>
+            </div>
           </div>
         </div>
       </div>
