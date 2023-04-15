@@ -10,27 +10,31 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-        <div class="search-bar"></div>
+        <div class="search-bar">
+          <p>search</p>
+        </div>
         <div class="today-weater">
           <div class="row">
-            <div class="col-6">
-              <img
-                class="main"
-                src="media/Partly cloudy.png"
-                alt="partly cloudy"
-              />
+            <div class="col">
+              <img class="main" src="#" alt="partly cloudy" class="big-icon" />
               <h3>Partly cloudy</h3>
               <p>Saturday, April 15th</p>
             </div>
-            <div class="col-6">
+            <div class="col">
               <h2>Copenhagen</h2>
-              <p class="small">Fahrenheit</p>
+              <small>Fahrenheit</small>
               <h1 class="temp">12°</h1>
             </div>
           </div>
@@ -38,45 +42,41 @@
         <div class="ari-quali">
           <h3>Air Quality</h3>
           <div class="row">
-            <div class="col-6">
-              <img src="media/windArtboard 1.png" alt="wind icon" />
+            <div class="col">
+              <img src="#" alt="wind icon" />
               <p>7 m/s</p>
             </div>
-            <div class="col-6">
-              <img src="media/humidityArtboard 1.png" alt="humidity icon" />
+            <div class="col">
+              <img src="#" alt="humidity icon" />
               <p>42%</p>
             </div>
           </div>
         </div>
         <div class="forcast">
           <div class="row">
-            <div class="col-4">
+            <div class="col this-day">
               <h3>Sat</h3>
               <p class="date">April 15th</p>
-              <img
-                class="forcast"
-                src="media/Partly cloudy.png"
-                alt="partly cloudy"
-              />
-              <h1 class="forcast">12°</h1>
+              <img src="#" alt="partly cloudy" />
+              <h1>12°</h1>
             </div>
-            <div class="col-4">
+            <div class="col prediction">
               <h3>Sun</h3>
               <p class="date">April 16th</p>
-              <img class="forcast" src="media/rain.png" alt="rain" />
-              <h1 class="forcast">10°</h1>
+              <img src="#" alt="rain" />
+              <h1>10°</h1>
             </div>
-            <div class="col-4">
+            <div class="col day-two">
               <h3>Mon</h3>
               <p class="date">April 17th</p>
-              <img class="forcast" src="media/cloudy.png" alt="cloudy" />
-              <h1 class="forcast">13°</h1>
+              <img src="#" alt="cloudy" />
+              <h1>13°</h1>
             </div>
-            <div class="col-4">
+            <div class="col day-three">
               <h3>Tue</h3>
               <p class="date">April 18th</p>
-              <img class="forcast" src="media/sun.png" alt="Sunny" />
-              <h1 class="forcast">16°</h1>
+              <img src="#" alt="Sunny" />
+              <h1>16°</h1>
             </div>
           </div>
         </div>

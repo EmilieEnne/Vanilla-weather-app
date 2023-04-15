@@ -1,629 +1,75 @@
 body {
   background: #e9efff;
+  font-family: "Climate Crisis", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Rectangle 1 */
-
-position: absolute;
-width: 681px;
-height: 397px;
-left: 380px;
-top: 166px;
-
-background: linear-gradient(128.98deg, #b2e8ff 25.2%, #cfc5f7 93.14%);
-box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
-border-radius: 60px;
-
-/* Rectangle 2 */
-
-position: absolute;
-width: 681px;
-height: 217px;
-left: 380px;
-top: 630px;
-
-background: rgba(255, 255, 255, 0.5);
-box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
-border-radius: 60px;
-
-/* Rectangle 3 */
-
-position: absolute;
-width: 121px;
-height: 290px;
-left: 381px;
-top: 912px;
-
-background: rgba(255, 255, 255, 0.1);
-border-radius: 60px;
-
-/* Rectangle 4 */
-
-position: absolute;
-width: 121px;
-height: 290px;
-left: 784px;
-top: 912px;
-
-background: rgba(255, 255, 255, 0.1);
-border-radius: 60px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-/* Rectangle 5 */
-
-position: absolute;
-width: 121px;
-height: 290px;
-left: 643px;
-top: 912px;
-
-background: linear-gradient(170deg, #b2e8ff 7.18%, #cfc5f7 95.46%);
-border-radius: 60px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-/* Rectangle 6 */
-
-position: absolute;
-width: 121px;
-height: 290px;
-left: 801px;
-top: 912px;
-
-background: rgba(255, 255, 255, 0.1);
-border-radius: 60px;
-
-/* Rectangle 7 */
-
-position: absolute;
-width: 121px;
-height: 290px;
-left: 940px;
-top: 912px;
-
-background: rgba(255, 255, 255, 0.1);
-border-radius: 60px;
-
-/* Rectangle 8 */
-
-position: absolute;
-width: 680px;
-height: 77px;
-left: 1061px;
-top: 53px;
-
-background: rgba(255, 255, 255, 0.5);
-box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
-border-radius: 60px;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-
-/* Search */
-
-position: absolute;
-width: 95px;
-height: 41px;
-left: 442px;
-top: 73px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Air Quality */
-
-position: absolute;
-width: 138px;
-height: 41px;
-left: 442px;
-top: 664px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Sat */
-
-position: absolute;
-width: 44px;
-height: 41px;
-left: 420px;
-top: 932px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Sun */
-
-position: absolute;
-width: 51px;
-height: 41px;
-left: 560px;
-top: 936px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* Mon */
-
-position: absolute;
-width: 58px;
-height: 41px;
-left: 695px;
-top: 932px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Tue */
-
-position: absolute;
-width: 49px;
-height: 41px;
-left: 837px;
-top: 932px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Wed */
-
-position: absolute;
-width: 62px;
-height: 41px;
-left: 970px;
-top: 932px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Wind Speed */
-
-position: absolute;
-width: 126px;
-height: 32px;
-left: 490px;
-top: 774px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 32px;
-/* identical to box height */
-
-color: #959595;
-
-/* April 15th */
-
-position: absolute;
-width: 71px;
-height: 24px;
-left: 406px;
-top: 973px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-color: #959595;
-
-/* April 16th */
-
-position: absolute;
-width: 72px;
-height: 24px;
-left: 547px;
-top: 974px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* April 17th */
-
-position: absolute;
-width: 70px;
-height: 24px;
-left: 689px;
-top: 973px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-color: #959595;
-
-/* April 18th */
-
-position: absolute;
-width: 71px;
-height: 24px;
-left: 826px;
-top: 973px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-color: #959595;
-
-/* April 19th */
-
-position: absolute;
-width: 71px;
-height: 24px;
-left: 965px;
-top: 973px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-color: #959595;
-
-/* Humidity */
-
-position: absolute;
-width: 94px;
-height: 32px;
-left: 805px;
-top: 771px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 21px;
-line-height: 32px;
-/* identical to box height */
-
-color: #959595;
-
-/* 7 m/s */
-
-position: absolute;
-width: 77px;
-height: 41px;
-left: 559px;
-top: 733px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* 42% */
-
-position: absolute;
-width: 53px;
-height: 41px;
-left: 872px;
-top: 733px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #959595;
-
-/* Partly cloudy 1 */
-
-position: absolute;
-width: 262px;
-height: 208px;
-left: 442px;
-top: 215px;
-
-background: url(Partly cloudy.png);
-
-/* Partly cloudy 2 */
-
-position: absolute;
-width: 91px;
-height: 72px;
-left: 399px;
-top: 1017px;
-
-background: url(Partly cloudy.png);
-
-/* Partly cloudy 3 */
-
-position: absolute;
-width: 91px;
-height: 72px;
-left: 816px;
-top: 1017px;
-
-background: url(Partly cloudy.png);
-
-/* Partly cloudy */
-
-position: absolute;
-width: 174px;
-height: 41px;
-left: 442px;
-top: 451px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 27px;
-line-height: 40px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* Copenhagen */
-
-position: absolute;
-width: 199px;
-height: 45px;
-left: 794px;
-top: 215px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 45px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* Fahrenheit */
-
-position: absolute;
-width: 81px;
-height: 23px;
-left: 912px;
-top: 266px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 22px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* Saturday, April 15th */
-
-position: absolute;
-width: 180px;
-height: 29px;
-left: 442px;
-top: 492px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 28px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* 12° */
-
-position: absolute;
-width: 207px;
-height: 270px;
-left: 790px;
-top: 277px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 250;
-font-size: 180px;
-line-height: 270px;
-/* identical to box height */
-
-color: #7834e8;
-
-/* 12° */
-
-position: absolute;
-width: 58px;
-height: 75px;
-left: 416px;
-top: 1094px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 250;
-font-size: 50px;
-line-height: 75px;
-/* identical to box height */
-
-color: #7834e8;
-
-/* 10° */
-
-position: absolute;
-width: 59px;
-height: 75px;
-left: 557px;
-top: 1094px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 250;
-font-size: 50px;
-line-height: 75px;
-/* identical to box height */
-
-color: #ffffff;
-
-/* 13° */
-
-position: absolute;
-width: 58px;
-height: 75px;
-left: 695px;
-top: 1094px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 250;
-font-size: 50px;
-line-height: 75px;
-/* identical to box height */
-
-color: #7834e8;
-
-/* 14° */
-
-position: absolute;
-width: 58px;
-height: 75px;
-left: 833px;
-top: 1094px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 250;
-font-size: 50px;
-line-height: 75px;
-/* identical to box height */
-
-color: #7834e8;
-
-/* 16° */
-
-position: absolute;
-width: 60px;
-height: 75px;
-left: 971px;
-top: 1094px;
-
-font-family: "Poppins";
-font-style: normal;
-font-weight: 250;
-font-size: 50px;
-line-height: 75px;
-/* identical to box height */
-
-color: #7834e8;
-
-/* windArtboard 1 1 */
-
-position: absolute;
-width: 138px;
-height: 93px;
-left: 421px;
-top: 710px;
-
-background: url(windArtboard 1.png);
-
-/* windArtboard 1 2 */
-
-position: absolute;
-width: 138px;
-height: 93px;
-left: 421px;
-top: 710px;
-
-background: url(windArtboard 1.png);
-
-/* humidityArtboard 1 1 */
-
-position: absolute;
-width: 170px;
-height: 81px;
-left: 720px;
-top: 713px;
-
-background: url(humidityArtboard 1.png);
-
-/* rain 1 */
-
-position: absolute;
-width: 65px;
-height: 63px;
-left: 553px;
-top: 1026px;
-
-background: url(rain.png);
-
-/* cloudy 1 */
-
-position: absolute;
-width: 77px;
-height: 46px;
-left: 681px;
-top: 1026px;
-
-background: url(cloudy.png);
-
-/* sun 1 */
-
-position: absolute;
-width: 59px;
-height: 58px;
-left: 971px;
-top: 1024px;
-
-background: url(sun.png);
+.search-bar {
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 680px;
+  height: 75px;
+  border-radius: 60px;
+  margin: 50px auto;
+}
+
+.today-weater {
+  background: linear-gradient(128.98deg, #b2e8ff 25.2%, #cfc5f7 93.14%);
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
+  border-radius: 60px;
+  max-width: 680px;
+  height: 400px;
+  margin: 35px auto;
+}
+
+.ari-quali {
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 680px;
+  height: 220px;
+  border-radius: 60px;
+  margin: 70px auto;
+}
+
+.forcast {
+  max-width: 680px;
+  margin: 65px auto;
+}
+
+.this-day {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  max-width: 150px;
+  height: 290px;
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.prediction {
+  background: linear-gradient(128.98deg, #b2e8ff 25.2%, #cfc5f7 93.14%);
+  border-radius: 60px;
+  max-width: 150px;
+  height: 290px;
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.day-two {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  max-width: 150px;
+  height: 290px;
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.day-three {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  max-width: 150px;
+  height: 290px;
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
+}
