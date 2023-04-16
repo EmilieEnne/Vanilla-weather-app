@@ -40,6 +40,7 @@ function displayTemp(response) {
   let iconElement = document.querySelector("#icon");
 
   celciusTemperature = response.data.temperature.current;
+  let iconPic = response.data.condition.icon;
 
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   descriptionElemet.innerHTML = response.data.condition.description;
@@ -47,7 +48,7 @@ function displayTemp(response) {
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.time * 1000);
-  iconElement.setAttribute("src", response.data.condition.icon_url);
+  iconElement.setAttribute("src", `media/${iconPic}.png`);
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
