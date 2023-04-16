@@ -66,13 +66,18 @@ body {
 }
 
 .today-weater small {
-  display: block;
+  display: inline;
   text-align: right;
-  padding-right: 60px;
+}
+
+.fahren {
+  padding-left: 80px;
+  margin-left: 150px;
 }
 .today-weater a {
   text-decoration: none;
   color: #fff;
+  text-align: right;
 }
 
 .air-quali {

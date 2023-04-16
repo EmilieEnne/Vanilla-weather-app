@@ -39,6 +39,8 @@ function displayTemp(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
+  celciusTemperature = response.data.temperature.current;
+
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   descriptionElemet.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
@@ -49,12 +51,7 @@ function displayTemp(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-function search(city) {
-  let apiKey = "3f867b81a453d2baod0689b610fta810";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(displayTemp);
-}
+let celciusTemperature = null;
 
 function handelSubmit(event) {
   event.preventDefault();
@@ -63,5 +60,31 @@ function handelSubmit(event) {
   console.log(cityInputElement.value);
 }
 
+function displayCelcTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
+}
+
+function displayFahrenTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp");
+  let fahrenTemp = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenTemp);
+}
+
+let fahrenLink = document.querySelector("#fahren");
+fahrenLink.addEventListener("click", displayFahrenTemp);
+
+let celcLink = document.querySelector("#celc");
+celcLink.addEventListener("click", displayCelcTemp);
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handelSubmit);
+
+function search(city) {
+  let apiKey = "3f867b81a453d2baod0689b610fta810";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemp);
+}
