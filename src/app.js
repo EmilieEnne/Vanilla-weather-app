@@ -49,10 +49,19 @@ function displayTemp(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-let apiKey = "3f867b81a453d2baod0689b610fta810";
-let city = "Copenhagen";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "3f867b81a453d2baod0689b610fta810";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
-console.log(apiUrl);
+  axios.get(apiUrl).then(displayTemp);
+}
 
-axios.get(apiUrl).then(displayTemp);
+function handelSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+  console.log(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handelSubmit);

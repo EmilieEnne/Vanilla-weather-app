@@ -3,10 +3,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.search-bar {
+.search {
+  display: block;
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
-  max-width: 680px;
+  width: 680px;
   height: 75px;
   border-radius: 60px;
   margin: 50px auto;
@@ -14,6 +15,7 @@ body {
   padding-left: 50px;
   font-size: 27px;
   color: #959595;
+  border: 0px;
 }
 
 .today-weater {
