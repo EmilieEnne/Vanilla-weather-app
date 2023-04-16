@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@100;400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -34,13 +35,13 @@
                 alt="partly cloudy"
                 class="big-icon"
               />
-              <h3>Partly cloudy</h3>
-              <p>Saturday, April 15th</p>
+              <h3 class="description" id="description">Partly cloudy</h3>
+              <p id="date">Saturday, April 15th</p>
             </div>
             <div class="col">
-              <h2>Copenhagen</h2>
+              <h2 id="city"></h2>
               <a href="#" target="_blank"> <small>Fahrenheit</small></a>
-              <h1 class="temp">12°</h1>
+              <h1 class="temp"><span id="temp"></span>°</h1>
             </div>
           </div>
         </div>

@@ -54,6 +54,9 @@ body {
   font-weight: 400;
   font-size: 27px;
 }
+.description:first-letter {
+  text-transform: capitalize;
+}
 
 .today-weater p {
   font-size: 16px;
