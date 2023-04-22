@@ -1,6 +1,16 @@
+function darkMode(timestamp) {
+  var element = document.body;
+  document.body.classList.add("dark-mode");
+}
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let today = date.getDate();
+  let hours = date.getHours;
+  console.log(hours);
+  if (hours >= 20 || hours <= 6) {
+    darkMode();
+  }
   let days = [
     "Sunday",
     "Monday",
@@ -117,7 +127,6 @@ function handelSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
-  console.log(cityInputElement.value);
 }
 
 let form = document.querySelector("#search-form");

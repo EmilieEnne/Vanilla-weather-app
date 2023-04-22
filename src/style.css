@@ -70,10 +70,6 @@ body {
   text-align: right;
 }
 
-.fahren {
-  padding-left: 80px;
-  margin-left: 150px;
-}
 .today-weater a {
   text-decoration: none;
   color: #fff;
@@ -136,4 +132,66 @@ body {
   width: 100px;
   height: 80px;
   margin-bottom: 30px;
+}
+
+.dark-mode {
+  background: #141a4d;
+}
+
+.dark-mode .today-weater {
+  background: linear-gradient(128.98deg, #2065b6 25.2%, #43116b 93.14%);
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
+  border-radius: 60px;
+  max-width: 680px;
+  height: 400px;
+  margin: 35px auto;
+  color: #fff;
+}
+
+.dark-mode .search {
+  background: rgba(255, 255, 255, 0.1);
+  display: block;
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
+  width: 680px;
+  height: 75px;
+  border-radius: 60px;
+  margin: 50px auto;
+  padding-top: 18px;
+  padding-left: 50px;
+  font-size: 27px;
+  color: #b7a7d1;
+  border: 0px;
+}
+
+.dark-mode .air-quali {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
+  max-width: 680px;
+  height: 220px;
+  border-radius: 60px;
+  margin: 70px auto;
+  color: #b7a7d1;
+  padding-left: 60px;
+}
+
+.dark-mode .forcast {
+  max-width: 680px;
+  margin: auto;
+  color: #b7a7d1;
+}
+
+.dark-mode .forcast h1 {
+  font-weight: 200;
+  font-size: 32px;
+  color: #b7a7d1;
+}
+
+.dark-mode .this-day {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  max-width: 150px;
+  height: 290px;
+  text-align: center;
+  padding-top: 20px;
+  margin: auto;
 }
