@@ -29,6 +29,36 @@ function formatDate(timestamp) {
   return `${day} ${month} ${today}`;
 }
 
+function formatDay(timestamp) {
+  let time = new Date(timestamp * 1000);
+  let day = time.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return `${days[day]}`;
+}
+
+function formatForecastDate(timestamp) {
+  let time = new Date(timestamp * 1000);
+  let dato = time.getDate();
+  let month = time.getMonth();
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  return `${months[month]} ${dato}`;
+}
+
 function getForecast(city) {
   console.log(city);
   let apiKey = "3f867b81a453d2baod0689b610fta810";
@@ -64,18 +94,24 @@ function displayTemp(response) {
 function displayForecast(response) {
   console.log(response.data.daily);
   forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.daily;
   let forecastHTML = ``;
-  let days = ["Sun", "Mon", "Tue", "Wed"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `<div class="col-3 this-day">
-             <h3>${day}</h3>
-             <p class="date">April 15th</p>
-             <img src="media/few-clouds-day.png" alt="partly cloudy" />
-             <h1>12°</h1>
-           </div>
-        `;
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 4) {
+      forecastHTML =
+        forecastHTML +
+        `<div class="col-3 this-day">
+              <h3>${formatDay(forecastDay.time)}</h3>
+              <p class="date">${formatForecastDate(forecastDay.time)}</p>
+              <img src="media/${
+                forecastDay.condition.icon
+              }.png" alt="partly cloudy" />
+              <h1>${Math.round(forecastDay.temperature.maximum)}°/${Math.round(
+          forecastDay.temperature.minimum
+        )}°</h1>
+            </div>
+         `;
+    }
   });
   forecastElement.innerHTML = forecastHTML;
 }
