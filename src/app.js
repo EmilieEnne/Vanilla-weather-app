@@ -52,6 +52,24 @@ function displayTemp(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
+function displayForecast() {
+  forecastElement = document.querySelector("#forecast");
+  let forecastHTML = ``;
+  let days = ["Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-3 this-day">
+             <h3>${day}</h3>
+             <p class="date">April 15th</p>
+             <img src="media/few-clouds-day.png" alt="partly cloudy" />
+             <h1>12°</h1>
+           </div>
+        `;
+  });
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let celciusTemperature = null;
 
 function handelSubmit(event) {
@@ -89,3 +107,5 @@ function search(city) {
 
   axios.get(apiUrl).then(displayTemp);
 }
+
+displayForecast();

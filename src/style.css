@@ -112,7 +112,7 @@ body {
 
 .forcast {
   max-width: 680px;
-  margin: 65px auto;
+  margin: auto;
   color: #959595;
 }
 
@@ -137,68 +137,3 @@ body {
   height: 80px;
   margin-bottom: 30px;
 }
-
-.prediction {
-  background: linear-gradient(170deg, #cfc5f7 7.18%, #b2e8ff 95.46%);
-  box-shadow: 8px 6px 30px -4px rgba(0, 0, 0, 0.13);
-  border-radius: 60px;
-  max-width: 150px;
-  height: 290px;
-  text-align: center;
-  padding-top: 20px;
-  margin: auto;
-  color: #fff;
-}
-
-.prediction h1 {
-  color: #fff;
-}
-
-.prediction img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-.day-two {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 60px;
-  max-width: 150px;
-  height: 290px;
-  text-align: center;
-  padding-top: 20px;
-  margin: auto;
-}
-
-.day-two img {
-  width: 100px;
-  height: 60px;
-  margin-bottom: 50px;
-}
-
-.day-three {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 60px;
-  max-width: 150px;
-  height: 290px;
-  text-align: center;
-  padding-top: 20px;
-  margin: auto;
-}
-
-.day-three img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 30px;
-}
-
-/* prediction */
-
-position: absolute;
-width: 152px;
-height: 290px;
-left: 558px;
-top: 912px;
-
-background: linear-gradient(170deg, #cfc5f7 7.18%, #b2e8ff 95.46%);
-border-radius: 60px;
