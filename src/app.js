@@ -153,3 +153,6 @@ function search(city) {
 
   axios.get(apiUrl).then(displayTemp);
 }
+
+
+search("Copenhagen");
