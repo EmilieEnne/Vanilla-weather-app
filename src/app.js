@@ -60,10 +60,8 @@ function formatForecastDate(timestamp) {
 }
 
 function getForecast(city) {
-  console.log(city);
   let apiKey = "3f867b81a453d2baod0689b610fta810";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -92,7 +90,6 @@ function displayTemp(response) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
   forecastElement = document.querySelector("#forecast");
   let forecast = response.data.daily;
   let forecastHTML = ``;
@@ -116,33 +113,12 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-let celciusTemperature = null;
-
 function handelSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
   console.log(cityInputElement.value);
 }
-
-function displayCelcTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = Math.round(celciusTemperature);
-}
-
-function displayFahrenTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temp");
-  let fahrenTemp = (celciusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenTemp);
-}
-
-let fahrenLink = document.querySelector("#fahren");
-fahrenLink.addEventListener("click", displayFahrenTemp);
-
-let celcLink = document.querySelector("#celc");
-celcLink.addEventListener("click", displayCelcTemp);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handelSubmit);
@@ -153,6 +129,5 @@ function search(city) {
 
   axios.get(apiUrl).then(displayTemp);
 }
-
 
 search("Copenhagen");
